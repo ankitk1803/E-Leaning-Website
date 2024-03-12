@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Reply Notification</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .notification-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .notification-title {
+            color: #333333;
+        }
+
+        .notification-message {
+            color: #666666;
+        }
+
+        .thank-you-message {
+            color: #009688;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="notification-container">
+        <h1 class="notification-title">Hello <span class="user-name"><%= name %></span>,</h1>
+        <p class="notification-message">A new reply has been added to your question in the video "<span class="video-title"><%= title %></span>".</p>
+        <p class="thank-you-message">Thank you for being a part of our Community.</p>
+    </div>
+</body>
+</html>
